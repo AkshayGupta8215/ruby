@@ -5,6 +5,10 @@ b=a[0].to_f
 c=a[2].to_f
 print "Output is : "
 
+d={"+"=>b+c,"-"=>b-c,"*"=>b*c,"/"=>b/c,"%"=>b%c}
+puts d[a[1]]
+
+=begin
 case a[1]
 when '+'
   puts b+c
@@ -19,6 +23,7 @@ when '%'
 else
   puts "Invalid expression"
 end
+=end
 
 =begin
 if a[1]=="+"
