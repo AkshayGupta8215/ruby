@@ -1,4 +1,4 @@
-print "Enter a simple operation\nExample : \"1+3\"\nInput is : "
+print "Enter a simple equation\nOperations allowed are '+', '-', '*', '/' and '%'\nExample : \"1+3\"\nInput is : "
 a=Array.new
 a=gets
 b=a[0].to_i
