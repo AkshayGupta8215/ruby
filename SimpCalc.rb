@@ -4,9 +4,11 @@ a=gets
 b=a[0].to_f
 c=a[2].to_f
 print "Output is : "
-
+begin
 d={"+"=>b+c,"-"=>b-c,"*"=>b*c,"/"=>b/c,"%"=>b%c}
 puts d[a[1]]
+rescue ZeroDivisionError =>a
+  puts a
 
 =begin
 case a[1]
